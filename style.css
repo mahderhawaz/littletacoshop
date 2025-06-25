@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f8f8;
+  color: #222;
+}
+
+/* Header and Navigation */
+header {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.shop-title {
+  font-size: 2.5rem;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eee;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: #000;
+  text-decoration: underline;
+  margin: 0 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover, nav a.active {
+  color: #388e3c;
+}
+
+/* Bienvenidos Banner */
+.bienvenidos-banner {
+  display: inline-block;
+  background: #388e3c;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  margin: 2rem 0 1rem 2rem;
+  transform: rotate(-10deg);
+  box-shadow: 2px 2px 8px #0002;
+  position: absolute;
+  left: 0;
+  top: 120px;
+  z-index: 2;
+}
+
+/* Hero Image */
+.hero-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  width: 80vw;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px #0005;
+}
+
+/* Rectangle Section Styles */
+.menu-section, .info-section {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 32px 24px;
+  margin: 40px auto;
+  max-width: 800px;
+  border: 2px solid #bbb;
+}
+
+.menu-title {
+  color: #388e3c;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1.1rem;
+}
+
+.menu-table th, .menu-table td {
+  border: 2px solid #bbb;
+  padding: 16px 10px;
+  text-align: center;
+}
+
+.menu-table th {
+  background: #f0f0f0;
+  color: #388e3c;
+  font-size: 1.1em;
+}
+
+.menu-table td {
+  background: #fafafa;
+}
+
+.menu-table tr:first-child th:first-child {
+  border-top-left-radius: 12px;
+}
+.menu-table tr:first-child th:last-child {
+  border-top-right-radius: 12px;
+}
+.menu-table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+.menu-table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+.info-section h2 {
+  color: #388e3c;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  margin-top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .menu-section, .info-section {
+    padding: 16px 4px;
+    max-width: 98vw;
+  }
+  .hero-img {
+    width: 98vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .shop-title { font-size: 1.5rem; }
+  nav a { margin: 0 0.7rem; font-size: 1rem; }
+  .bienvenidos-banner { font-size: 1rem; padding: 0.3em 1em; top: 90px; }
+  .hero-img { width: 98vw; }
+}
